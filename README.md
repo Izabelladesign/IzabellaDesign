@@ -1,4 +1,4 @@
-# IzabellaDoser
+**# IzabellaDoser
 👋 Hi, I’m Izabella (or Bella!)
 
 🎓 I’m a sophomore Computer Science major at San José State University
@@ -12,3 +12,4 @@
 
 Let’s connect and build something cool together! 🚀
 📫 You can reach me at izzyd23@gmail.com or check out more on www.linkedin.com/in/izabelladoser
+**
