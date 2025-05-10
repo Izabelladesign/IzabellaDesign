@@ -21,16 +21,15 @@ Includes: Notebooks, sample datasets, installation guide, results visualizations
 
 ## 🛠 Tech Stack
 
-**Languages:** Java, Python, C++, SQL, JavaScript  
+**Languages:** Java, Python
 **Libraries & Frameworks:** NumPy, Pandas, JavaFX  
 **Tools:** Git, GitHub, Colab, VS Code, Figma 
 ---
 
 ## 🧠 Involvement & Interests
 
-- 💻 **Public Relations Officer**, SWE @ SJSU  
-- 🧩 **Community Engagement Committee**, Responsible Computing Club  
-- 📚 Former peer tutor (math + English), 20+ students supported  
+- 💻 **Secretary**, SWE @ SJSU  
+- 🧩 **Community Engagement Committee**, Responsible Computing Club   
 - 🧠 AI Studio Fellow — Spring '25 Cohort  
 
 ---
