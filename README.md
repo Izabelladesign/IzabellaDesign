@@ -17,7 +17,9 @@ I love creating solutions that bridge people and technology.
 ## 🛠 Tech Stack
 
 **Languages:** Java, Python
+
 **Libraries & Frameworks:** NumPy, Pandas, JavaFX  
+
 **Tools:** Git, GitHub, VS Code, Figma 
 ---
 
