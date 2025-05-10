@@ -1,13 +1,46 @@
-### 👋 Hi, I’m Izabella (or Bella!)
+# 👋 Hi there, I'm Izabella — or just Bella!
 
-🎓 I’m a sophomore Computer Science major at **San José State University**  
-💡 I’m passionate about exploring the intersections of:  
-• 🤖 **Artificial Intelligence** & **Machine Learning**  
-• ⚛️ **Quantum Computing**  
-• 🎯 **Product Management** & Human-Centered Design  
+🎓 I'm a sophomore Computer Science major at **San José State University**  
+💡 I'm passionate about building meaningful tech at the intersection of:
 
-🌱 Currently learning and building projects that blend tech with impact  
+- 🤖 **Artificial Intelligence & Machine Learning**
+- ⚛️ **Quantum Computing**
+- 🎯 **Product Management & Human-Centered Design**
+
+🌱 Currently learning and creating projects that blend **technology and social impact**  
 📚 Always curious, always growing  
+🤝 Let’s connect and build something cool together!
 
-Let’s connect and build something cool together! 🚀  
-📫 You can reach me at **izzyd23@gmail.com** or check out more on [LinkedIn](https://www.linkedin.com/in/izabelladoser)
+---
+
+## 🛠 Tech Stack
+
+**Languages:**  
+`Java` `Python`
+
+**Frameworks & Libraries:**  
+`JavaFX` `Pandas`
+
+**Tools:**  
+`Git` `GitHub` `VS Code` 
+
+
+---
+
+## 🚀 Projects
+
+### 🔐 **ClockIt – Office Hours Manager**
+A JavaFX application to define, edit, and manage semester office hours.  
+**Features:** Modular MVC structure, custom CSV-based persistence, editable TableViews, scene navigation with FXML.  
+**Tech Stack:** Java, JavaFX, FXML, OOP, CSV file management  
+
+---
+
+## 📫 Let’s Connect!
+
+- 📧 Email: [izzyd23@gmail.com](mailto:izzyd23@gmail.com)  
+- 💼 LinkedIn: [linkedin.com/in/izabellad](https://linkedin.com/in/izabellad)  
+
+---
+
+> “Technology is best when it brings people together — and I aim to design it that way.”
