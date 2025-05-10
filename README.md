@@ -22,7 +22,7 @@
 `JavaFX` `Pandas`
 
 **Tools:**  
-`Git` `GitHub` `VS Code` 
+`GitHub` `VS Code` 
 
 
 ---
