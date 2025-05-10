@@ -39,14 +39,7 @@ Includes: Notebooks, sample datasets, installation guide, results visualizations
 ## 📫 Contact Me
 
 📧 Email: [izzyd23@gmail.com](mailto:izzyd23@gmail.com)  
-🔗 LinkedIn: [linkedin.com/in/izabellad](https://linkedin.com/in/izabellad)
-
----
-
-## 📊 GitHub Stats
-
-![Izabella's GitHub Stats](https://github-readme-stats.vercel.app/api?username=izzyd23&show_icons=true&theme=default)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=izzyd23&layout=compact)
+🔗 LinkedIn: [linkedin.com/in/izabellad](https://linkedin.com/in/izabelladoser)
 
 ---
 
