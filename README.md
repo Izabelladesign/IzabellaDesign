@@ -1,46 +1,54 @@
-# 👋 Hi there, I'm Izabella — or just Bella!
+<img src="profile-pic.jpg" alt="Izabella Doser" width="150" style="border-radius: 50%; margin-bottom: 20px;">
 
-🎓 I'm a sophomore Computer Science major at **San José State University**  
-💡 I'm passionate about building meaningful tech at the intersection of:
+# 👋 Hi there, I’m Izabella (or Bella!)
+
+🎓 Sophomore Computer Science major @ **San José State University**  
+💡 Passionate about building at the intersection of:
 
 - 🤖 **Artificial Intelligence & Machine Learning**
 - ⚛️ **Quantum Computing**
 - 🎯 **Product Management & Human-Centered Design**
 
-🌱 Currently learning and creating projects that blend **technology and social impact**  
-📚 Always curious, always growing  
-🤝 Let’s connect and build something cool together!
+I love creating solutions that bridge people and technology. Whether it’s reducing bias in speech models or crafting clean UIs, my goal is to make tech more responsible and human-aware.
+
+🌱 Currently exploring projects in **ethical AI**, **bias detection**, and **real-world application of ML models**  
+🛠 Always learning, always iterating  
 
 ---
+
+**🛠 Tools & Methods:**  
+Python, Hugging Face Transformers, Google Colab, pandas
+Includes: Notebooks, sample datasets, installation guide, results visualizations, and next steps
 
 ## 🛠 Tech Stack
 
-**Languages:**  
-`Java` `Python`
+**Languages:** Java, Python, C++, SQL, JavaScript  
+**Libraries & Frameworks:** NumPy, Pandas, JavaFX  
+**Tools:** Git, GitHub, Colab, VS Code, Figma 
+---
 
-**Frameworks & Libraries:**  
-`JavaFX` `Pandas`
+## 🧠 Involvement & Interests
 
-**Tools:**  
-`GitHub` `VS Code` 
-
+- 💻 **Public Relations Officer**, SWE @ SJSU  
+- 🧩 **Community Engagement Committee**, Responsible Computing Club  
+- 📚 Former peer tutor (math + English), 20+ students supported  
+- 🧠 AI Studio Fellow — Spring '25 Cohort  
 
 ---
 
-## 🚀 Projects
+## 📫 Contact Me
 
-### 🔐 **ClockIt – Office Hours Manager**
-A JavaFX application to define, edit, and manage semester office hours.  
-**Features:** Modular MVC structure, custom CSV-based persistence, editable TableViews, scene navigation with FXML.  
-**Tech Stack:** Java, JavaFX, FXML, OOP, CSV file management  
+📧 Email: [izzyd23@gmail.com](mailto:izzyd23@gmail.com)  
+🔗 LinkedIn: [linkedin.com/in/izabellad](https://linkedin.com/in/izabellad)
 
 ---
 
-## 📫 Let’s Connect!
+## 📊 GitHub Stats
 
-- 📧 Email: [izzyd23@gmail.com](mailto:izzyd23@gmail.com)  
-- 💼 LinkedIn: [linkedin.com/in/izabellad](www.linkedin.com/in/izabelladoser)  
+![Izabella's GitHub Stats](https://github-readme-stats.vercel.app/api?username=izzyd23&show_icons=true&theme=default)  
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=izzyd23&layout=compact)
 
 ---
 
-> “Technology is best when it brings people together — and I aim to design it that way.”
+
+> “If technology isn’t inclusive, is it really innovative?”
