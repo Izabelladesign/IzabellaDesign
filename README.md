@@ -8,22 +8,17 @@
 - ⚛️ **Quantum Computing**
 - 🎯 **Product Management & Human-Centered Design**
 
-I love creating solutions that bridge people and technology. Whether it’s reducing bias in speech models or crafting clean UIs, my goal is to make tech more responsible and human-aware.
+I love creating solutions that bridge people and technology.
 
 🌱 Currently exploring projects in **ethical AI**, **bias detection**, and **real-world application of ML models**  
 🛠 Always learning, always iterating  
 
 ---
-
-**🛠 Tools & Methods:**  
-Python, Hugging Face Transformers, Google Colab, pandas
-Includes: Notebooks, sample datasets, installation guide, results visualizations, and next steps
-
 ## 🛠 Tech Stack
 
 **Languages:** Java, Python
 **Libraries & Frameworks:** NumPy, Pandas, JavaFX  
-**Tools:** Git, GitHub, Colab, VS Code, Figma 
+**Tools:** Git, GitHub, VS Code, Figma 
 ---
 
 ## 🧠 Involvement & Interests
