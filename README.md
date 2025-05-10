@@ -39,7 +39,7 @@ A JavaFX application to define, edit, and manage semester office hours.
 ## 📫 Let’s Connect!
 
 - 📧 Email: [izzyd23@gmail.com](mailto:izzyd23@gmail.com)  
-- 💼 LinkedIn: [linkedin.com/in/izabellad](https://linkedin.com/in/izabellad)  
+- 💼 LinkedIn: [linkedin.com/in/izabellad](www.linkedin.com/in/izabelladoser)  
 
 ---
 
