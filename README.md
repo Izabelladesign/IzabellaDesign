@@ -1,4 +1,3 @@
-<img src="profile-pic.jpg" alt="Izabella Doser" width="150" style="border-radius: 50%; margin-bottom: 20px;">
 
 # 👋 Hi there, I’m Izabella (or Bella!)
 
