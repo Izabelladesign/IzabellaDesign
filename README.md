@@ -21,6 +21,7 @@ I love creating solutions that bridge people and technology.
 **Libraries & Frameworks:** NumPy, Pandas, JavaFX  
 
 **Tools:** Git, GitHub, VS Code, Figma 
+
 ---
 
 ## 🧠 Involvement & Interests
