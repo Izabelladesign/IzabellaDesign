@@ -27,7 +27,7 @@ I love creating solutions that bridge people and technology.
 ## 🧠 Involvement & Interests
 
 - 💻 **Secretary**, SWE @ SJSU  
-- 🧩 **Community Engagement Committee**, Responsible Computing Club   
+- 🧩 **Community Engagement Co-lead**, Responsible Computing Club   
 - 🧠 AI Studio Fellow — Spring '25 Cohort  
 
 ---
