@@ -1,7 +1,7 @@
 
 # 👋 Hi there, I’m Izabella (or Bella!)
 
-🎓 Sophomore Computer Science major @ **San José State University**  
+🎓 Junior Computer Science major @ **San José State University**  
 💡 Passionate about building at the intersection of:
 
 - 🤖 **Artificial Intelligence & Machine Learning**
@@ -22,13 +22,6 @@ I love creating solutions that bridge people and technology.
 
 **Tools:** Git, GitHub, VS Code, Figma 
 
----
-
-## 🧠 Involvement & Interests
-
-- 💻 **Secretary**, SWE @ SJSU  
-- 🧩 **Community Engagement Co-lead**, Responsible Computing Club   
-- 🧠 AI Studio Fellow — Spring '25 Cohort  
 
 ---
 
@@ -38,6 +31,3 @@ I love creating solutions that bridge people and technology.
 🔗 LinkedIn: [linkedin.com/in/izabellad](https://linkedin.com/in/izabelladoser)
 
 ---
-
-
-> “If technology isn’t inclusive, is it really innovative?”
