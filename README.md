@@ -8,10 +8,6 @@
 - ⚛️ **Quantum Computing**
 - 🎯 **Product Management & Human-Centered Design**
 
-I love creating solutions that bridge people and technology.
-
-🛠 Always learning, always iterating  
-
 ---
 ## 🛠 Tech Stack
 
