@@ -10,7 +10,6 @@
 
 I love creating solutions that bridge people and technology.
 
-🌱 Currently exploring projects in **ethical AI**, **bias detection**, and **real-world application of ML models**  
 🛠 Always learning, always iterating  
 
 ---
