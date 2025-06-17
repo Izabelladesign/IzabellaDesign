@@ -23,6 +23,5 @@
 ## 📫 Contact Me
 
 📧 Email: [izzyd23@gmail.com](mailto:izzyd23@gmail.com)  
-🔗 LinkedIn: [linkedin.com/in/izabellad](https://linkedin.com/in/izabelladoser)
 
 ---
