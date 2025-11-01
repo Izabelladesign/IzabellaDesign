@@ -1,27 +1,80 @@
+# Hi! I'm Izabella Doser 👋  
 
-# 👋 Hi there, I’m Izabella (or Bella!)
+## About Me  
+Hi! I'm Izabella (or Bella), a junior studying Computer Science at **San José State University**.  
+I'm passionate about **AI/ML**, **human-centered design**, and **responsible computing** — creating technology that’s innovative, inclusive, and sustainable.  
 
-🎓 Junior Computer Science major @ **San José State University**  
-💡 Passionate about building at the intersection of:
+Most recently, I interned at **Google Cloud**, where I co-developed an **Agentic AI security scanner** designed to automate vulnerability detection across 25+ GCP services.  
+Through the **Break Through Tech AI Studio**, I’ve also built EEG-driven models that predict engagement and cognitive states from brainwave data — combining neuroscience and machine learning to make learning systems more adaptive.  
 
-- 🤖 **Artificial Intelligence & Machine Learning**
-- ⚛️ **Quantum Computing**
-- 🎯 **Product Management & Human-Centered Design**
-
----
-## 🛠 Tech Stack
-
-**Languages:** Java, Python, SQL
-
-**Libraries & Frameworks:** NumPy, Pandas, JavaFX  
-
-**Tools:** Git, GitHub, VS Code, Figma 
-
+- 🌎 Especially interested in the intersection of **AI**, **sustainability**, and **product design**  
+- 💡 I love collaborating across disciplines to solve meaningful, real-world problems  
+- 🚀 Always learning and building toward ethical, human-centered innovation  
 
 ---
 
-## 📫 Contact Me
+## 🛠 Tech Stack  
 
-📧 Email: [izzyd23@gmail.com](mailto:izzyd23@gmail.com)  
+**Languages:** Java, Python, SQL  
+**Libraries & Frameworks:** NumPy, Pandas, Scikit-learn, TensorFlow, Matplotlib, JavaFX  
+**Tools:** Git, GitHub, VS Code, Figma, Google Cloud Platform, Jupyter Notebook  
 
 ---
+
+## 🚀 Featured Projects  
+
+### [Agent-Powered Vulnerability Scanner for Google Cloud Platform](#)
+**Google Cloud**  
+A modular, multi-agent system built on Google Cloud that automates vulnerability detection and reporting across 25+ GCP services. The project leveraged **Vertex AI** and **Google Agent Development Kit** to streamline manual security analysis workflows.  
+
+- **Goal:** Automate and optimize security scanning to reduce manual review time  
+- **Tech Stack:** Python, Node.js, Google Cloud Functions, Vertex AI, Agent Development Kit, Cloud Run  
+- **What I learned:** Multi-agent systems, cloud architecture, automation pipelines, and secure system design  
+
+---
+
+### [EEG-Based Engagement Prediction System](#)
+**Break Through Tech AI Studio – Fall 2025**  
+Developed a machine learning model that predicts engagement levels using EEG (brainwave) data collected during learning sessions. The model interprets contextual signals like modality and task type to better understand human focus.  
+
+- **Goal:** Identify patterns in EEG signals that distinguish engaged vs. disengaged learners  
+- **Tech Stack:** Python, Pandas, Scikit-learn, Matplotlib, TensorFlow  
+- **What I learned:** Feature engineering, model evaluation, and designing context-aware ML systems  
+
+---
+
+### [ClockIt – Office Hours Manager](#)
+**JavaFX Desktop Application**  
+Designed and implemented a desktop scheduling app to help faculty manage semester office hours and student appointments efficiently.  
+
+- **Goal:** Create a lightweight, intuitive, and portable faculty scheduling tool  
+- **Tech Stack:** Java, JavaFX, MVC architecture, CSV file management  
+- **What I learned:** UI/UX design, event-driven programming, and JavaFX component integration  
+
+---
+
+### [Book Review Sentiment Analysis](#)
+**Machine Learning Mini Project**  
+Performed sentiment analysis on book reviews using a feedforward neural network, experimenting with different epoch and dropout settings to optimize model accuracy.  
+
+- **Goal:** Classify review sentiment using text vectorization and neural modeling  
+- **Tech Stack:** Python, Keras, TensorFlow, Matplotlib  
+- **What I learned:** Text preprocessing, hyperparameter tuning, and neural network optimization  
+
+---
+
+## 🌿 Other Projects  
+- **Quantum ML Prototype** – Built hybrid ML models using Qiskit’s `QuantumKernel` and `ZZFeatureMap`  
+- **ClubOps Automation Tool** – Designed a system to streamline event tracking for student organizations  
+- **Neural Network Visualizer** – Created an interactive dashboard to visualize neuron activations  
+
+---
+
+## 📫 Contact  
+📧 **Email:** [izzyd23@gmail.com](mailto:izzyd23@gmail.com)  
+💻 **GitHub:** [github.com/izzydoser](https://github.com/izzydoser)  
+🔗 **LinkedIn:** [linkedin.com/in/izabelladoser](#)  
+
+---
+
+> “Build responsibly. Design with empathy. Iterate with curiosity.”
