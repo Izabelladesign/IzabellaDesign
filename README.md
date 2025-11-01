@@ -23,7 +23,7 @@ Through the **Break Through Tech AI Studio**, I’ve also built EEG-driven model
 
 ## 🚀 Featured Projects  
 
-### [Agent-Powered Vulnerability Scanner for Google Cloud Platform](#)
+### [Agent-Powered Vulnerability Scanner for Google Cloud Platform](https://github.com/jasminetntu/multiagent-security-gcp)
 **Google Cloud**  
 A modular, multi-agent system built on Google Cloud that automates vulnerability detection and reporting across 25+ GCP services. The project leveraged **Vertex AI** and **Google Agent Development Kit** to streamline manual security analysis workflows.  
 
@@ -43,7 +43,7 @@ Developed a machine learning model that predicts engagement levels using EEG (br
 
 ---
 
-### [ClockIt – Office Hours Manager](#)
+### [ClockIt – Office Hours Manager](https://github.com/Izabelladesign/CS151_Dev30)
 **JavaFX Desktop Application**  
 Designed and implemented a desktop scheduling app to help faculty manage semester office hours and student appointments efficiently.  
 
@@ -53,7 +53,7 @@ Designed and implemented a desktop scheduling app to help faculty manage semeste
 
 ---
 
-### [Book Review Sentiment Analysis](#)
+### [Book Review Sentiment Analysis](https://github.com/Izabelladesign/book-review-sentiment-neural-network)
 **Machine Learning Mini Project**  
 Performed sentiment analysis on book reviews using a feedforward neural network, experimenting with different epoch and dropout settings to optimize model accuracy.  
 
@@ -61,12 +61,6 @@ Performed sentiment analysis on book reviews using a feedforward neural network,
 - **Tech Stack:** Python, Keras, TensorFlow, Matplotlib  
 - **What I learned:** Text preprocessing, hyperparameter tuning, and neural network optimization  
 
----
-
-## 🌿 Other Projects  
-- **Quantum ML Prototype** – Built hybrid ML models using Qiskit’s `QuantumKernel` and `ZZFeatureMap`  
-- **ClubOps Automation Tool** – Designed a system to streamline event tracking for student organizations  
-- **Neural Network Visualizer** – Created an interactive dashboard to visualize neuron activations  
 
 ---
 
