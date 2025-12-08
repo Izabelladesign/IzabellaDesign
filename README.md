@@ -43,16 +43,6 @@ Developed a machine learning model that predicts engagement levels using EEG (br
 
 ---
 
-### [ClockIt – Office Hours Manager](https://github.com/Izabelladesign/CS151_Dev30)
-**JavaFX Desktop Application**  
-Designed and implemented a desktop scheduling app to help faculty manage semester office hours and student appointments efficiently.  
-
-- **Goal:** Create a lightweight, intuitive, and portable faculty scheduling tool  
-- **Tech Stack:** Java, JavaFX, MVC architecture, CSV file management  
-- **What I learned:** UI/UX design, event-driven programming, and JavaFX component integration  
-
----
-
 ### [Book Review Sentiment Analysis](https://github.com/Izabelladesign/book-review-sentiment-neural-network)
 **Machine Learning Mini Project**  
 Performed sentiment analysis on book reviews using a feedforward neural network, experimenting with different epoch and dropout settings to optimize model accuracy.  
