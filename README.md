@@ -43,17 +43,6 @@ Developed a machine learning model that predicts engagement levels using EEG (br
 
 ---
 
-### [Book Review Sentiment Analysis](https://github.com/Izabelladesign/book-review-sentiment-neural-network)
-**Machine Learning Mini Project**  
-Performed sentiment analysis on book reviews using a feedforward neural network, experimenting with different epoch and dropout settings to optimize model accuracy.  
-
-- **Goal:** Classify review sentiment using text vectorization and neural modeling  
-- **Tech Stack:** Python, Keras, TensorFlow, Matplotlib  
-- **What I learned:** Text preprocessing, hyperparameter tuning, and neural network optimization  
-
-
----
-
 ## 📫 Contact  
 📧 **Email:** [izzyd23@gmail.com](mailto:izzyd23@gmail.com)  
 🔗 **LinkedIn:** [linkedin.com/in/izabelladoser](#)  
