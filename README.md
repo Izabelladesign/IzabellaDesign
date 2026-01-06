@@ -34,7 +34,7 @@ A modular, multi-agent system built on Google Cloud that automates vulnerability
 ---
 
 ### [EEG-Based Engagement Prediction System](https://github.com/Izabelladesign/challenger-insight)
-**Break Through Tech AI Studio – Fall 2025**  
+**Chambers Capital Ventures – Fall 2025**  
 Developed a machine learning model that predicts engagement levels using EEG (brainwave) data collected during learning sessions. The model interprets contextual signals like modality and task type to better understand human focus.  
 
 - **Goal:** Identify patterns in EEG signals that distinguish engaged vs. disengaged learners  
