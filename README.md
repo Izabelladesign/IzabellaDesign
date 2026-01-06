@@ -56,7 +56,6 @@ Performed sentiment analysis on book reviews using a feedforward neural network,
 
 ## 📫 Contact  
 📧 **Email:** [izzyd23@gmail.com](mailto:izzyd23@gmail.com)  
-💻 **GitHub:** [github.com/izzydoser](https://github.com/izzydoser)  
 🔗 **LinkedIn:** [linkedin.com/in/izabelladoser](#)  
 
 ---
