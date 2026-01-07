@@ -74,9 +74,8 @@ Neural networks, physics-informed machine learning, and cloud security systems �
 
 ---
 
-## 🎧 Now Playing
-
-![Now Playing](./assets/now-playing.svg)
+### 🎧 Now Playing
+![Now Playing](https://izabella-design-uwzv.vercel.app/api/now-playing?user=izabelladesign)
 
 ---
 
