@@ -61,7 +61,6 @@ A Java desktop application that analyzes customer purchasing behavior using **RF
 - **Tech:** Java, Java Swing, JDBC, MySQL, SQL  
 
 ---
----
 
 ## 📚 Currently Studying
 
