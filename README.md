@@ -70,7 +70,7 @@ Neural networks, physics-informed machine learning, and cloud security systems �
 
 ## 📫 Contact Me!
 
-📧 **Email:** [izzyd23@gmail.com](mailto:izzyd23@gmail.com)  
+📧 **Email:** [izzyd023@gmail.com](mailto:izzyd23@gmail.com)  
 
 ---
 ### 🎧 Now Playing
