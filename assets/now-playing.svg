@@ -3,40 +3,25 @@
   
   <defs>
     <pattern id="cover" patternUnits="userSpaceOnUse" width="110" height="110">
-      <image href="https://lastfm.freetls.fastly.net/i/u/300x300/b7bf7eb6977b293768e4d7e7af0ac45b.png" x="0" y="0" width="110" height="110" preserveAspectRatio="xMidYMid slice"/>
+      <image href="./assets/cover.jpg" x="0" y="0" width="110" height="110" preserveAspectRatio="xMidYMid slice"/>
     </pattern>
   </defs>
 
-  <!-- Card -->
   <rect x="0" y="0" width="720" height="170" rx="22" fill="#0f1115"/>
   <rect x="0.5" y="0.5" width="719" height="169" rx="22" fill="none" stroke="#242831"/>
 
-  <!-- Left cover -->
   <rect x="34" y="30" width="110" height="110" rx="14" fill="url(#cover)"/>
   <rect x="34" y="30" width="110" height="110" rx="14" fill="none" stroke="#2b2f39"/>
 
-  <!-- Text block -->
-  <text x="178" y="76"
-        fill="#d7d7d7"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
-        font-size="30"
-        font-weight="650">
-    Apple Cider
-  </text>
+  <text x="178" y="76" fill="#d7d7d7"
+    font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+    font-size="30" font-weight="650">Apple Cider</text>
 
-  <text x="178" y="108"
-        fill="#9aa0aa"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
-        font-size="22"
-        font-weight="500">
-    beabadoobee
-  </text>
+  <text x="178" y="108" fill="#9aa0aa"
+    font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+    font-size="22" font-weight="500">beabadoobee</text>
 
-  <text x="178" y="138"
-        fill="#9aa0aa"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
-        font-size="22"
-        font-weight="500">
-    Loveworm
-  </text>
+  <text x="178" y="138" fill="#9aa0aa"
+    font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+    font-size="22" font-weight="500">Loveworm</text>
 </svg>
