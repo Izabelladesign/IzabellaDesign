@@ -1,4 +1,4 @@
-# Hi! I'm Izabella Doser 👋  
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=%E2%A4%B7+%E3%82%9BHi+there!+%CB%8E%CB%8A%CB%97;I'm+Izabella+%E2%8B%86%E2%9C%B4%EF%B8%8E%CB%9A%EF%BD%A1%E2%8B%86)](https://git.io/typing-svg)
 
 ## About Me  
 Hi! I'm Izabella (or Bella), a junior studying Computer Science at **San José State University**.  
