@@ -158,7 +158,7 @@ export default async function handler(req, res) {
 </svg>`;
 
     res.setHeader("Content-Type", "image/svg+xml");
-    res.setHeader("Cache-Control", "s-maxage=60, stale-while-revalidate=300");
+    res.setHeader("Cache-Control", "no-store, max-age=0");
     res.status(200).send(svg);
   } catch (err) {
     res.status(500).send("Error generating now playing card");
