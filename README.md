@@ -8,16 +8,17 @@
 </p>
 
 ---
-## About Me  
-Hi! I'm Izabella (or Bella), a junior studying Computer Science at **San José State University**.  
-I'm passionate about **AI/ML**, **human-centered design**, and **responsible computing** — creating technology that’s innovative, inclusive, and sustainable.  
+## 🚀 About Me
 
-Most recently, I interned at **Google Cloud**, where I co-developed an **Agentic AI security scanner** designed to automate vulnerability detection across 25+ GCP services.  
-Through the **Break Through Tech AI Studio**, I’ve also built EEG-driven models that predict engagement and cognitive states from brainwave data — combining neuroscience and machine learning to make learning systems more adaptive.  
+Hi, I’m Izabella (or Bella), a junior studying **Computer Science at San José State University**.
 
-- 🌎 Especially interested in the intersection of **AI**, **sustainability**, and **product design**  
-- 💡 I love collaborating across disciplines to solve meaningful, real-world problems  
-- 🚀 Always learning and building toward ethical, human-centered innovation  
+I’m interested in building intelligent systems at the intersection of **AI/ML, systems, and human-centered design**, with a strong focus on **responsible and real-world impact**.
+
+Most recently, I worked through the **Break Through Tech AI Studio (Chambers Capital Ventures cohort)**, where I helped develop machine learning models to analyze **EEG brainwave data** and predict engagement and cognitive states. This work combined **signal processing, neural networks, and data-driven evaluation** to explore how learning systems can become more adaptive and personalized.
+
+Previously, I interned at **Google Cloud**, where I co-developed an **agentic AI security scanner** designed to automate vulnerability detection across **25+ GCP services**. The project focused on **cloud security, scalable automation, and system reliability** within large cloud environments.
+
+I enjoy collaborating across disciplines and working on problems that blend **technical depth with practical constraints**, and I’m especially interested in **AI for sustainability, responsible computing, and product-oriented engineering**. I’m always learning, building, and refining my engineering instincts through hands-on projects.
 
 ---
 
@@ -29,7 +30,7 @@ Through the **Break Through Tech AI Studio**, I’ve also built EEG-driven model
 
 ---
 
-## 🚀 Featured Projects  
+## ⚙️ Featured Projects  
 
 ### [Agent-Powered Vulnerability Scanner for Google Cloud Platform](https://github.com/jasminetntu/multiagent-security-gcp)
 **Google Cloud**  
