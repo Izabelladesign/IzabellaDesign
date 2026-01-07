@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     const trunc = (s = "", n = 30) =>
       s.length > n ? s.slice(0, n - 1) + "…" : s;
 
-    // ---------- 1) Get current/recent track from Last.fm ----------
+    // 1) Last.fm recent/now playing
     const lastUrl =
       `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks` +
       `&user=${encodeURIComponent(user)}` +
@@ -33,7 +33,7 @@ export default async function handler(req, res) {
     let title = "Not playing anything";
     let artist = "";
     let album = "";
-    let cover = "";
+    let coverUrl = "";
 
     if (track) {
       title = track.name || title;
@@ -41,13 +41,11 @@ export default async function handler(req, res) {
       album = track.album?.["#text"] || "";
     }
 
-    // ---------- 2) Apple cover lookup via iTunes Search API ----------
-    // No API key required. This usually returns correct, high-res art.
-    // We'll try a few results and pick the best match.
+    // 2) Apple (iTunes Search) cover lookup (no auth)
     const norm = (s = "") =>
       String(s)
         .toLowerCase()
-        .replace(/\(.*?\)/g, "") // remove (feat...), (remastered), etc.
+        .replace(/\(.*?\)/g, "")
         .replace(/[^a-z0-9]+/g, " ")
         .trim();
 
@@ -55,14 +53,10 @@ export default async function handler(req, res) {
       const t = norm(it.trackName || "");
       const a = norm(it.artistName || "");
       let score = 0;
-
       if (t === wantTitle) score += 4;
       if (a === wantArtist) score += 4;
-
       if (t.includes(wantTitle) || wantTitle.includes(t)) score += 2;
       if (a.includes(wantArtist) || wantArtist.includes(a)) score += 2;
-
-      // small boost if album name exists
       if (it.collectionName) score += 0.5;
       return score;
     };
@@ -90,29 +84,43 @@ export default async function handler(req, res) {
           }
         }
 
-        // artworkUrl100 is common; we up-res it
         if (best?.artworkUrl100) {
-          cover = best.artworkUrl100
-            .replace("100x100bb", "600x600bb")
-            .replace("100x100", "600x600");
+          coverUrl = best.artworkUrl100
+            .replace("100x100bb", "300x300bb")
+            .replace("100x100", "300x300");
         }
 
-        // fill album from Apple if Last.fm didn't provide (or it's blank)
         if ((!album || album.trim() === "") && best?.collectionName) {
           album = best.collectionName;
         }
       }
     }
 
-    // ---------- 3) Render Spotify-style SVG card ----------
-    const W = 720,
-      H = 170,
-      R = 22;
+    // 3) IMPORTANT: Embed cover into SVG as base64 so GitHub will render it
+    let coverDataUri = "";
+    if (coverUrl) {
+      try {
+        const imgRes = await fetch(coverUrl);
+        if (imgRes.ok) {
+          const contentType = imgRes.headers.get("content-type") || "image/jpeg";
+          const buf = Buffer.from(await imgRes.arrayBuffer());
+          // If image is empty/too big, skip embedding
+          if (buf.length > 0 && buf.length < 1_500_000) {
+            coverDataUri = `data:${contentType};base64,${buf.toString("base64")}`;
+          }
+        }
+      } catch {
+        // ignore, fallback to gradient
+      }
+    }
 
-    const coverDefs = cover
+    // 4) Render Spotify-style SVG
+    const W = 720, H = 170, R = 22;
+
+    const coverDefs = coverDataUri
       ? `<defs>
           <pattern id="cover" patternUnits="userSpaceOnUse" width="110" height="110">
-            <image href="${esc(cover)}" x="0" y="0" width="110" height="110" preserveAspectRatio="xMidYMid slice"/>
+            <image href="${coverDataUri}" x="0" y="0" width="110" height="110" preserveAspectRatio="xMidYMid slice"/>
           </pattern>
         </defs>`
       : `<defs>
@@ -122,7 +130,7 @@ export default async function handler(req, res) {
           </linearGradient>
         </defs>`;
 
-    const coverFill = cover ? 'fill="url(#cover)"' : 'fill="url(#coverGrad)"';
+    const coverFill = coverDataUri ? 'fill="url(#cover)"' : 'fill="url(#coverGrad)"';
 
     const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
@@ -134,23 +142,19 @@ export default async function handler(req, res) {
   <rect x="34" y="30" width="110" height="110" rx="14" ${coverFill}/>
   <rect x="34" y="30" width="110" height="110" rx="14" fill="none" stroke="#2b2f39"/>
 
-  <text x="178" y="76"
-    fill="#d7d7d7"
+  <text x="178" y="76" fill="#d7d7d7"
     font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
-    font-size="30"
-    font-weight="650">
+    font-size="30" font-weight="650">
     ${esc(trunc(title))}
   </text>
 
-  <text x="178" y="108"
-    fill="#9aa0aa"
+  <text x="178" y="108" fill="#9aa0aa"
     font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
     font-size="22">
     ${esc(trunc(artist || "Unknown artist"))}
   </text>
 
-  <text x="178" y="138"
-    fill="#9aa0aa"
+  <text x="178" y="138" fill="#9aa0aa"
     font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
     font-size="22">
     ${esc(trunc(album))}
@@ -158,6 +162,7 @@ export default async function handler(req, res) {
 </svg>`;
 
     res.setHeader("Content-Type", "image/svg+xml");
+    // GitHub still may cache the final image; URL cache-buster is still best.
     res.setHeader("Cache-Control", "no-store, max-age=0");
     res.status(200).send(svg);
   } catch (err) {
