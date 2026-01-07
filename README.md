@@ -32,7 +32,7 @@ const aboutMe = {
   ],
 };
 
-
+```
 ---
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=IzabellaDesignE&layout=compact&theme=dark)
