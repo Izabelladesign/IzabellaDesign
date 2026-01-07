@@ -33,7 +33,7 @@ I enjoy collaborating across disciplines and working on problems that balance **
 
 ## ⚙️ Featured Projects
 
-### 🔐 [Agent-Powered Vulnerability Scanner for Google Cloud Platform](https://github.com/jasminetntu/multiagent-security-gcp)  
+### [Agent-Powered Vulnerability Scanner for Google Cloud Platform](https://github.com/jasminetntu/multiagent-security-gcp)  
 **Google Cloud**  
 Automated vulnerability detection across **25+ GCP services** using a modular, multi-agent architecture built with **Vertex AI** and Google’s Agent Development Kit.
 
@@ -42,13 +42,25 @@ Automated vulnerability detection across **25+ GCP services** using a modular, m
 
 ---
 
-### 🧠 [EEG-Based Engagement Prediction System](https://github.com/IzabellaDesign/challenger-insight)  
+### [EEG-Based Engagement Prediction System](https://github.com/IzabellaDesign/challenger-insight)  
 **Chambers Capital Ventures – Fall 2025**  
 Built machine learning models to predict learner engagement from **EEG signal data**, incorporating contextual features such as task type and modality.
 
 - **Focus:** Signal processing, feature engineering, model evaluation  
 - **Tech:** Python, Pandas, Scikit-learn, TensorFlow  
 
+---
+
+### [Customer Segmentation App](https://github.com/IzabellaDesign/CustomerSegmentationApp)  
+**Java • Databases • Systems Design**  
+
+A Java desktop application that analyzes customer purchasing behavior using **RFM (Recency, Frequency, Monetary) analysis**. The system supports full CRUD operations for customers and products, order creation and tracking, automated RFM scoring, dynamic customer segmentation, and revenue reporting.
+
+- **Architecture:** Three-tier system (Java Swing UI, Java/JDBC logic layer, MySQL database)
+- **Focus:** Data modeling, database normalization, backend logic, and GUI design
+- **Tech:** Java, Java Swing, JDBC, MySQL, SQL  
+
+---
 ---
 
 ## 📚 Currently Studying
