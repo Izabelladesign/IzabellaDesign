@@ -74,6 +74,13 @@ Neural networks, physics-informed machine learning, and cloud security systems â
 
 ---
 
+## ðŸŽ§ Now Playing
+<!--START_SECTION:nowplaying-->
+Loading...
+<!--END_SECTION:nowplaying-->
+
+---
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/IzabellaDesign/IzabellaDesign/output/github-contribution-grid-snake-dark.svg" />
 </p>
