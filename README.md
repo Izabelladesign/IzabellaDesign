@@ -77,9 +77,6 @@ Neural networks, physics-informed machine learning, and cloud security systems �
 ## 🎧 Now Playing
 
 ![Now Playing](./assets/now-playing.svg)
-<!--START_SECTION:nowplaying-->
-▶️ **Now:** [Nachos — BabyChiefDoit](https://www.last.fm/music/BabyChiefDoit/_/Nachos) _(from ANIMALS ONLY (ICE COLD))_
-<!--END_SECTION:nowplaying-->
 
 ---
 
