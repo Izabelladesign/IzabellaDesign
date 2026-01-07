@@ -51,6 +51,12 @@ Built machine learning models to predict learner engagement from **EEG signal da
 
 ---
 
+## 📚 Currently Studying
+
+Neural networks, physics-informed machine learning, and cloud security systems — with a focus on applying ML to real-world and scientific problems.
+
+---
+
 ## 📫 Contact
 
 📧 **Email:** [izzyd23@gmail.com](mailto:izzyd23@gmail.com)  
