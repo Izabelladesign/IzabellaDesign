@@ -25,7 +25,7 @@ I enjoy collaborating across disciplines and working on problems that balance **
 
 ## 🛠 Tech Stack
 
-**Languages:** Java, Python, SQL  
+**Languages:** Python, Java, JavaScript, C  
 **Libraries & Frameworks:** NumPy, Pandas, Scikit-learn, TensorFlow, Matplotlib, JavaFX  
 **Tools:** Git, GitHub, VS Code, Figma, Google Cloud Platform, Jupyter Notebook  
 
