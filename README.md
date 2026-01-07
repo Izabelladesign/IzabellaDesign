@@ -14,7 +14,7 @@ Hi, I’m Izabella (or Bella), a junior studying **Computer Science at San José
 
 I’m interested in building intelligent systems at the intersection of **AI/ML, systems, and human-centered design**, with a strong focus on **responsible and real-world impact**.
 
-Most recently, I worked through the **Break Through Tech AI Studio (Chambers Capital Ventures cohort)**, where I helped develop machine learning models to analyze **EEG brainwave data** and predict engagement and cognitive states. This work combined **signal processing, neural networks, and data-driven evaluation** to explore how learning systems can become more adaptive and personalized.
+Most recently, I worked with (Chambers Capital Ventures and DeepHumanX)**, where I helped develop machine learning models to analyze **EEG brainwave data** and predict engagement and cognitive states. This work combined **signal processing, neural networks, and data-driven evaluation** to explore how learning systems can become more adaptive and personalized.
 
 Previously, I interned at **Google Cloud**, where I co-developed an **agentic AI security scanner** designed to automate vulnerability detection across **25+ GCP services**. The project focused on **cloud security, scalable automation, and system reliability** within large cloud environments.
 
