@@ -6,18 +6,7 @@
     />
   </a>
 </p>
-
-GitHub automatically:
-- syntax-highlights it
-- gives it the dark code-card look
-- adds the copy button
-
-No plugins. No CSS. Just Markdown.
-
 ---
-
-## 🧩 Your Version (Copy–Paste Ready)
-
 
 
 ```markdown
