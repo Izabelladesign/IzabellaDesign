@@ -1,6 +1,7 @@
 <p align="center">
-  ![Typing SVG](https://readme-typing-svg.demolab.com?font=VT323&size=35&pause=350&color=86CBDA&width=435&lines=Hi+there!;I'm+Izabella+✨★°✦)
+  <img src="https://readme-typing-svg.demolab.com?font=VT323&size=35&pause=350&color=86CBDA&width=435&lines=Hi+there!;I'm+Izabella+✨★°✦" />
 </p>
+
 ## About Me  
 Hi! I'm Izabella (or Bella), a junior studying Computer Science at **San José State University**.  
 I'm passionate about **AI/ML**, **human-centered design**, and **responsible computing** — creating technology that’s innovative, inclusive, and sustainable.  
