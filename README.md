@@ -9,7 +9,6 @@
 
 
 ---
-
 ## 🚀 About Me
 
 Hi, I’m **Izabella (Bella)** — a **Computer Science junior at San José State University**.
@@ -34,32 +33,27 @@ I enjoy collaborating across disciplines and working on problems that balance **
 
 ## ⚙️ Featured Projects
 
-### 🔐 Agent-Powered Vulnerability Scanner for Google Cloud Platform  
+### 🔐 [Agent-Powered Vulnerability Scanner for Google Cloud Platform](https://github.com/jasminetntu/multiagent-security-gcp)  
 **Google Cloud**  
 Automated vulnerability detection across **25+ GCP services** using a modular, multi-agent architecture built with **Vertex AI** and Google’s Agent Development Kit.
 
 - **Focus:** Cloud security automation, scalable system design  
 - **Tech:** Python, Node.js, Cloud Functions, Cloud Run, Vertex AI  
 
-🔗 https://github.com/jasminetntu/multiagent-security-gcp
-
 ---
 
-### 🧠 EEG-Based Engagement Prediction System  
+### 🧠 [EEG-Based Engagement Prediction System](https://github.com/IzabellaDesign/challenger-insight)  
 **Chambers Capital Ventures – Fall 2025**  
 Built machine learning models to predict learner engagement from **EEG signal data**, incorporating contextual features such as task type and modality.
 
 - **Focus:** Signal processing, feature engineering, model evaluation  
 - **Tech:** Python, Pandas, Scikit-learn, TensorFlow  
 
-🔗 https://github.com/IzabellaDesign/challenger-insight
-
 ---
 
 ## 📫 Contact
 
 📧 **Email:** [izzyd23@gmail.com](mailto:izzyd23@gmail.com)  
-🔗 **LinkedIn:** https://linkedin.com/in/izabelladoser  
 ---
 
 <p align="center">
