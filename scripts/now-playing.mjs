@@ -8,16 +8,6 @@ if (!apiKey || !user) {
   process.exit(1);
 }
 
-const url =
-  `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks` +
-  `&user=${encodeURIComponent(user)}` +
-  `&api_key=${encodeURIComponent(apiKey)}` +
-  `&format=json&limit=1`;
-
-const res = await fetch(url);
-const data = await res.json();
-const track = data?.recenttracks?.track?.[0];
-
 const escapeXml = (s = "") =>
   String(s)
     .replace(/&/g, "&amp;")
@@ -31,27 +21,70 @@ const truncate = (s = "", max = 28) => {
   return str.length > max ? str.slice(0, max - 1) + "…" : str;
 };
 
+fs.mkdirSync("assets", { recursive: true });
+
+const url =
+  `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks` +
+  `&user=${encodeURIComponent(user)}` +
+  `&api_key=${encodeURIComponent(apiKey)}` +
+  `&format=json&limit=1`;
+
+const res = await fetch(url);
+const data = await res.json();
+const track = data?.recenttracks?.track?.[0];
+
 let title = "Not playing anything";
 let artist = "";
 let album = "";
-let cover = "";
+let coverUrl = "";
 
 if (track) {
   title = track.name ?? title;
   artist = track.artist?.["#text"] ?? "";
   album = track.album?.["#text"] ?? "";
-  cover = track.image?.[track.image.length - 1]?.["#text"] ?? "";
+  coverUrl = track.image?.[track.image.length - 1]?.["#text"] ?? "";
+}
+
+// Download cover locally so GitHub will render it
+const coverPath = "assets/cover.jpg";
+let hasCover = false;
+
+try {
+  if (coverUrl) {
+    const imgRes = await fetch(coverUrl);
+    if (imgRes.ok) {
+      const buf = Buffer.from(await imgRes.arrayBuffer());
+      if (buf.length > 0) {
+        fs.writeFileSync(coverPath, buf);
+        hasCover = true;
+      }
+    }
+  }
+} catch {
+  // ignore, fallback below
+}
+
+if (!hasCover) {
+  // If no cover, keep whatever previous cover exists, or create a tiny placeholder file
+  if (!fs.existsSync(coverPath)) {
+    fs.writeFileSync(coverPath, Buffer.alloc(0));
+  }
 }
 
 const W = 720;
 const H = 170;
 const R = 22;
 
-const coverDefs = cover
+const t = escapeXml(truncate(title, 30));
+const a = escapeXml(truncate(artist || "Unknown artist", 30));
+const al = escapeXml(truncate(album || "", 30));
+
+// Use local image in SVG (GitHub reliably renders this)
+const coverDefs = hasCover
   ? `
   <defs>
     <pattern id="cover" patternUnits="userSpaceOnUse" width="110" height="110">
-      <image href="${escapeXml(cover)}" x="0" y="0" width="110" height="110" preserveAspectRatio="xMidYMid slice"/>
+      <image href="./assets/cover.jpg" x="0" y="0" width="110" height="110" preserveAspectRatio="xMidYMid slice"/>
     </pattern>
   </defs>`
   : `
@@ -62,52 +95,31 @@ const coverDefs = cover
     </linearGradient>
   </defs>`;
 
-const coverFill = cover ? 'fill="url(#cover)"' : 'fill="url(#coverGrad)"';
-
-const t = escapeXml(truncate(title, 30));
-const a = escapeXml(truncate(artist || "Unknown artist", 30));
-const al = escapeXml(truncate(album || "", 30));
+const coverFill = hasCover ? 'fill="url(#cover)"' : 'fill="url(#coverGrad)"';
 
 const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
   ${coverDefs}
 
-  <!-- Card -->
   <rect x="0" y="0" width="${W}" height="${H}" rx="${R}" fill="#0f1115"/>
   <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="${R}" fill="none" stroke="#242831"/>
 
-  <!-- Left cover -->
   <rect x="34" y="30" width="110" height="110" rx="14" ${coverFill}/>
   <rect x="34" y="30" width="110" height="110" rx="14" fill="none" stroke="#2b2f39"/>
 
-  <!-- Text block -->
-  <text x="178" y="76"
-        fill="#d7d7d7"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
-        font-size="30"
-        font-weight="650">
-    ${t}
-  </text>
+  <text x="178" y="76" fill="#d7d7d7"
+    font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+    font-size="30" font-weight="650">${t}</text>
 
-  <text x="178" y="108"
-        fill="#9aa0aa"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
-        font-size="22"
-        font-weight="500">
-    ${a}
-  </text>
+  <text x="178" y="108" fill="#9aa0aa"
+    font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+    font-size="22" font-weight="500">${a}</text>
 
-  <text x="178" y="138"
-        fill="#9aa0aa"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
-        font-size="22"
-        font-weight="500">
-    ${al}
-  </text>
+  <text x="178" y="138" fill="#9aa0aa"
+    font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+    font-size="22" font-weight="500">${al}</text>
 </svg>
 `;
 
-fs.mkdirSync("assets", { recursive: true });
 fs.writeFileSync("assets/now-playing.svg", svg, "utf8");
-
-console.log("Wrote assets/now-playing.svg:", `${title} — ${artist}`);
+console.log("Wrote card:", `${title} — ${artist}`);
