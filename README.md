@@ -35,5 +35,7 @@ const aboutMe = {
 ```
 ---
 
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=IzabellaDesign&theme=github_dark)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/IzabellaDesign/IzabellaDesign/output/github-contribution-grid-snake-dark.svg" />
+</p>
 
