@@ -62,13 +62,13 @@ A Java desktop application that analyzes customer purchasing behavior using **RF
 
 ---
 
-## 📚 Currently Studying
+## Currently Studying
 
 Neural networks, physics-informed machine learning, and cloud security systems — with a focus on applying ML to real-world and scientific problems.
 
 ---
 
-## 📫 Contact Me!
+## Contact Me!
 
 📧 **Email:** [izzyd023@gmail.com](mailto:izzyd23@gmail.com)  
 
