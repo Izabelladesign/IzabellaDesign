@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     const trunc = (s = "", n = 30) =>
       s.length > n ? s.slice(0, n - 1) + "…" : s;
 
-    // 1) Last.fm: get most recent track (often "now playing" if scrobbling fast)
+    // ---------- 1) Get current/recent track from Last.fm ----------
     const lastUrl =
       `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks` +
       `&user=${encodeURIComponent(user)}` +
@@ -41,25 +41,73 @@ export default async function handler(req, res) {
       album = track.album?.["#text"] || "";
     }
 
-    // 2) iTunes Search: better album art
-    // Uses track + artist query. No API key needed.
+    // ---------- 2) Apple cover lookup via iTunes Search API ----------
+    // No API key required. This usually returns correct, high-res art.
+    // We'll try a few results and pick the best match.
+    const norm = (s = "") =>
+      String(s)
+        .toLowerCase()
+        .replace(/\(.*?\)/g, "") // remove (feat...), (remastered), etc.
+        .replace(/[^a-z0-9]+/g, " ")
+        .trim();
+
+    const scoreResult = (it, wantTitle, wantArtist) => {
+      const t = norm(it.trackName || "");
+      const a = norm(it.artistName || "");
+      let score = 0;
+
+      if (t === wantTitle) score += 4;
+      if (a === wantArtist) score += 4;
+
+      if (t.includes(wantTitle) || wantTitle.includes(t)) score += 2;
+      if (a.includes(wantArtist) || wantArtist.includes(a)) score += 2;
+
+      // small boost if album name exists
+      if (it.collectionName) score += 0.5;
+      return score;
+    };
+
     if (title && artist) {
-      const itunesQ = encodeURIComponent(`${title} ${artist}`);
-      const itunesUrl = `https://itunes.apple.com/search?term=${itunesQ}&entity=song&limit=1`;
+      const wantTitle = norm(title);
+      const wantArtist = norm(artist);
+
+      const q = encodeURIComponent(`${title} ${artist}`);
+      const itunesUrl = `https://itunes.apple.com/search?term=${q}&entity=song&limit=5`;
 
       const it = await fetch(itunesUrl);
       const itData = await it.json();
-      const first = itData?.results?.[0];
+      const results = Array.isArray(itData?.results) ? itData.results : [];
 
-      if (first?.artworkUrl100) {
-        // upgrade to higher res (usually works)
-        cover = first.artworkUrl100.replace("100x100bb", "600x600bb");
-        // fill album if Last.fm didn’t provide it
-        if (!album && first.collectionName) album = first.collectionName;
+      if (results.length) {
+        let best = results[0];
+        let bestScore = scoreResult(best, wantTitle, wantArtist);
+
+        for (const candidate of results.slice(1)) {
+          const s = scoreResult(candidate, wantTitle, wantArtist);
+          if (s > bestScore) {
+            best = candidate;
+            bestScore = s;
+          }
+        }
+
+        // artworkUrl100 is common; we up-res it
+        if (best?.artworkUrl100) {
+          cover = best.artworkUrl100
+            .replace("100x100bb", "600x600bb")
+            .replace("100x100", "600x600");
+        }
+
+        // fill album from Apple if Last.fm didn't provide (or it's blank)
+        if ((!album || album.trim() === "") && best?.collectionName) {
+          album = best.collectionName;
+        }
       }
     }
 
-    const W = 720, H = 170, R = 22;
+    // ---------- 3) Render Spotify-style SVG card ----------
+    const W = 720,
+      H = 170,
+      R = 22;
 
     const coverDefs = cover
       ? `<defs>
