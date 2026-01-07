@@ -7,6 +7,7 @@
   </a>
 </p>
 
+---
 ## About Me  
 Hi! I'm Izabella (or Bella), a junior studying Computer Science at **San José State University**.  
 I'm passionate about **AI/ML**, **human-centered design**, and **responsible computing** — creating technology that’s innovative, inclusive, and sustainable.  
