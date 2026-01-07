@@ -73,9 +73,14 @@ Neural networks, physics-informed machine learning, and cloud security systems �
 📧 **Email:** [izzyd23@gmail.com](mailto:izzyd23@gmail.com)  
 
 ---
-
 ### 🎧 Now Playing
-![Now Playing](https://izabella-design-uwzv.vercel.app/api/now-playing?user=izabelladesign&v=3)
+
+<p align="center">
+  <img
+    src="https://izabella-design-uwzv.vercel.app/api/now-playing?user=izabelladesign&v=3"
+    width="720"
+  />
+</p>
 
 ---
 
