@@ -35,4 +35,4 @@ const aboutMe = {
 ```
 ---
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=IzabellaDesign&show_icons=true&theme=dark&count_private=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=IzabellaDesign&show_icons=true&theme=dark&cache_seconds=86400)
