@@ -76,7 +76,7 @@ Neural networks, physics-informed machine learning, and cloud security systems �
 
 ## 🎧 Now Playing
 <!--START_SECTION:nowplaying-->
-Loading...
+▶️ **Now:** [Rêverie — William Joseph Puchot](https://www.last.fm/music/William+Joseph+Puchot/_/R%C3%AAverie) _(from Short Stories)_
 <!--END_SECTION:nowplaying-->
 
 ---
