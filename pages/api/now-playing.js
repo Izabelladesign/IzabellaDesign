@@ -8,16 +8,6 @@ export default async function handler(req, res) {
       return;
     }
 
-    const url =
-      `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks` +
-      `&user=${encodeURIComponent(user)}` +
-      `&api_key=${encodeURIComponent(apiKey)}` +
-      `&format=json&limit=1`;
-
-    const r = await fetch(url);
-    const data = await r.json();
-    const track = data?.recenttracks?.track?.[0];
-
     const esc = (s = "") =>
       String(s)
         .replace(/&/g, "&amp;")
@@ -29,6 +19,17 @@ export default async function handler(req, res) {
     const trunc = (s = "", n = 30) =>
       s.length > n ? s.slice(0, n - 1) + "…" : s;
 
+    // 1) Last.fm: get most recent track (often "now playing" if scrobbling fast)
+    const lastUrl =
+      `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks` +
+      `&user=${encodeURIComponent(user)}` +
+      `&api_key=${encodeURIComponent(apiKey)}` +
+      `&format=json&limit=1`;
+
+    const r = await fetch(lastUrl);
+    const data = await r.json();
+    const track = data?.recenttracks?.track?.[0];
+
     let title = "Not playing anything";
     let artist = "";
     let album = "";
@@ -38,12 +39,27 @@ export default async function handler(req, res) {
       title = track.name || title;
       artist = track.artist?.["#text"] || "";
       album = track.album?.["#text"] || "";
-      cover = track.image?.[track.image.length - 1]?.["#text"] || "";
     }
 
-    const W = 720;
-    const H = 170;
-    const R = 22;
+    // 2) iTunes Search: better album art
+    // Uses track + artist query. No API key needed.
+    if (title && artist) {
+      const itunesQ = encodeURIComponent(`${title} ${artist}`);
+      const itunesUrl = `https://itunes.apple.com/search?term=${itunesQ}&entity=song&limit=1`;
+
+      const it = await fetch(itunesUrl);
+      const itData = await it.json();
+      const first = itData?.results?.[0];
+
+      if (first?.artworkUrl100) {
+        // upgrade to higher res (usually works)
+        cover = first.artworkUrl100.replace("100x100bb", "600x600bb");
+        // fill album if Last.fm didn’t provide it
+        if (!album && first.collectionName) album = first.collectionName;
+      }
+    }
+
+    const W = 720, H = 170, R = 22;
 
     const coverDefs = cover
       ? `<defs>
