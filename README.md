@@ -14,46 +14,25 @@
 ```markdown
 
 const aboutMe = {
-  name: {
-    first: "Izabella",
-    nickname: "Bella",
-    last: "Doser",
-  },
-  education: {
-    major: "Computer Science",
-    school: "San José State University",
-    year: "Junior",
-  },
+  name: "Izabella Doser (Bella)",
+  major: "Computer Science @ San José State University",
   interests: [
     "AI / Machine Learning",
     "Cloud & Systems",
-    "Responsible Computing",
-    "Human-Centered Design",
-    "Sustainability"
+    "Responsible Computing"
   ],
-  experience: {
-    recent: [
-      "Break Through Tech AI Studio (Chambers Capital Ventures)",
-      "Google Cloud – Agentic AI Security Scanner"
-    ]
-  },
-  workingOn: "ML models for EEG-based engagement prediction",
-  learning: [
-    "Neural networks & model generalization",
-    "Physics-informed machine learning",
-    "Cloud security & automation"
+  recentWork: [
+    "Chambers Capital Ventures & DeepHumanX",
+    "Google Cloud – Agentic AI Security Scanner"
   ],
-  tools: [
-    "Python",
-    "Java",
-    "SQL",
-    "TensorFlow",
-    "Scikit-learn",
-    "GCP",
-    "Git"
+  currentlyLearning: [
+    "Neural Networks",
+    "Physics-Informed ML",
+    "Cloud Security"
   ],
-  socials: {
-    github: "https://github.com/your-username",
-    linkedin: "https://linkedin.com/in/your-linkedin"
-  }
 };
+
+
+---
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=IzabellaDesignE&layout=compact&theme=dark)
