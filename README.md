@@ -73,7 +73,7 @@ Neural networks, physics-informed machine learning, and cloud security systems �
 📧 **Email:** [izzyd023@gmail.com](mailto:izzyd23@gmail.com)  
 
 ---
-### 🎧 What Im Listening to rn!
+### 🎧 What I'm listening to rn!
 
 <p align="left">
    <img src="https://izabella-design-uwzv.vercel.app/api/now-playing?user=izabelladesign&v=4" width="460" 
