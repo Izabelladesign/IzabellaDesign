@@ -23,7 +23,7 @@ I enjoy collaborating across disciplines and working on problems that balance **
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 **Languages:** Python, Java, JavaScript, C  
 **Libraries & Frameworks:** NumPy, Pandas, Scikit-learn, TensorFlow, Matplotlib, JavaFX  
@@ -31,7 +31,7 @@ I enjoy collaborating across disciplines and working on problems that balance **
 
 ---
 
-## ⚙️ Featured Projects
+## Featured Projects
 
 ### [Agent-Powered Vulnerability Scanner for Google Cloud Platform](https://github.com/jasminetntu/multiagent-security-gcp)  
 **Google Cloud**  
