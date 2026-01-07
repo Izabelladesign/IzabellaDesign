@@ -15,7 +15,7 @@ Hi, I’m **Izabella (Bella)** — a **Computer Science junior at San José Stat
 
 I’m interested in building intelligent systems at the intersection of **AI/ML, cloud systems, and human-centered design**, with a strong focus on **responsible, real-world impact**.
 
-Most recently, I worked with **Chambers Capital Ventures & DeepHumanX**, where I developed machine learning models to analyze **EEG brainwave data** and predict engagement and cognitive states. This work combined **signal processing, neural networks, and data-driven evaluation** to explore how learning systems can become more adaptive and personalized.
+Most recently, I worked with **Chambers Capital Ventures & DeepHumanX**, where I developed machine learning models to analyze **EEG brainwave data** and predict engagement and cognitive states. This work combined **signal processing and data-driven evaluation** to explore how learning systems can become more adaptive and personalized.
 
 Previously, I interned at **Google Cloud**, where I co-developed an **agentic AI security scanner** that automated vulnerability detection across **25+ GCP services**, focusing on **cloud security, scalable automation, and system reliability**.
 
