@@ -13,7 +13,7 @@
 
 Hi, I’m **Izabella (Bella)** - a **Computer Science major at San José State University**.
 
-I’m interested in building intelligent systems at the intersection of **AI/ML, cloud systems, and human-centered design**, with a strong focus on **responsible, real-world impact** d(^_^)
+I’m interested in building intelligent systems at the intersection of **AI/ML, cloud systems, and human-centered design**, with a strong focus on **responsible, real-world impact!!!** d(^_^)
 
 ---
 
