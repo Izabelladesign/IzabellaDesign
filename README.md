@@ -39,8 +39,7 @@ Neural networks, physics-informed machine learning, and cloud security systems, 
 ### 🎧 What I'm listening to rn!
 
 <p align="left">
-   <img src="https://izabella-design-uwzv.vercel.app/api/now-playing?user=izabelladesign&v=4" width="460" 
-  />
+  <img src="./assets/now-playing.svg" width="460" />
 </p>
 
 ---
