@@ -40,7 +40,9 @@ export default async function handler(req, res) {
     const r = await fetch("https://api.spotify.com/v1/me/player", {
       headers: { Authorization: `Bearer ${accessToken}` },
     });
+
     if (r.status === 204) return null;
+
     const j = await r.json();
     if (!r.ok) throw new Error(`Playback error: ${JSON.stringify(j)}`);
     return j;
@@ -48,21 +50,23 @@ export default async function handler(req, res) {
 
   async function imageUrlToDataUri(url) {
     if (!url) return "";
+
     const r = await fetch(url);
     if (!r.ok) return "";
 
     const contentType = r.headers.get("content-type") || "image/jpeg";
-    const arrayBuffer = await r.arrayBuffer();
-    const base64 = Buffer.from(arrayBuffer).toString("base64");
+    const buffer = Buffer.from(await r.arrayBuffer());
+    const base64 = buffer.toString("base64");
+
     return `data:${contentType};base64,${base64}`;
   }
 
   let data = null;
+
   try {
     const accessToken = await getAccessToken();
     data = await getPlayback(accessToken);
   } catch (e) {
-    // If Spotify errors, still return a valid SVG
     data = null;
   }
 
@@ -73,9 +77,9 @@ export default async function handler(req, res) {
 
   const coverDataUri = await imageUrlToDataUri(coverUrl);
 
-  const W = 720,
-    H = 170,
-    R = 22;
+  const W = 720;
+  const H = 170;
+  const R = 22;
 
   const coverSize = 110;
   const coverX = 40;
@@ -83,44 +87,41 @@ export default async function handler(req, res) {
   const coverR = 18;
 
   const textX = coverX + coverSize + 30;
-  const titleY = 78;
-  const artistY = 112;
-  const albumY = 142;
 
   const defs = coverDataUri
     ? `<defs>
-        <pattern id="cover" patternUnits="userSpaceOnUse" width="${coverSize}" height="${coverSize}">
-          <image
-            href="${escapeXml(coverDataUri)}"
-            x="0"
-            y="0"
-            width="${coverSize}"
-            height="${coverSize}"
-            preserveAspectRatio="xMidYMid slice"
-          />
-        </pattern>
+        <clipPath id="coverClip">
+          <rect x="${coverX}" y="${coverY}" width="${coverSize}" height="${coverSize}" rx="${coverR}" />
+        </clipPath>
       </defs>`
     : "";
 
-  const coverRect = coverDataUri
-    ? `<rect x="${coverX}" y="${coverY}" width="${coverSize}" height="${coverSize}" rx="${coverR}" fill="url(#cover)"/>`
-    : `<rect x="${coverX}" y="${coverY}" width="${coverSize}" height="${coverSize}" rx="${coverR}" fill="#1b1f2a"/>
-       <text x="${coverX + 26}" y="${coverY + 65}" fill="#9aa0aa" font-size="18" font-family="Arial">No Art</text>`;
+  const coverElement = coverDataUri
+    ? `<image
+         href="${escapeXml(coverDataUri)}"
+         x="${coverX}"
+         y="${coverY}"
+         width="${coverSize}"
+         height="${coverSize}"
+         clip-path="url(#coverClip)"
+         preserveAspectRatio="xMidYMid slice"
+       />`
+    : `<rect x="${coverX}" y="${coverY}" width="${coverSize}" height="${coverSize}" rx="${coverR}" fill="#1b1f2a"/>`;
 
   const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
   ${defs}
   <rect width="${W}" height="${H}" rx="${R}" fill="#0f1115"/>
 
-  ${coverRect}
+  ${coverElement}
 
-  <text x="${textX}" y="${titleY}" fill="#d7d7d7" font-size="34" font-family="Arial" font-weight="700">
+  <text x="${textX}" y="78" fill="#d7d7d7" font-size="34" font-family="Arial" font-weight="700">
     ${escapeXml(trunc(title, 32))}
   </text>
-  <text x="${textX}" y="${artistY}" fill="#9aa0aa" font-size="22" font-family="Arial">
+  <text x="${textX}" y="112" fill="#9aa0aa" font-size="22" font-family="Arial">
     ${escapeXml(trunc(artist, 45))}
   </text>
-  <text x="${textX}" y="${albumY}" fill="#9aa0aa" font-size="22" font-family="Arial">
+  <text x="${textX}" y="142" fill="#9aa0aa" font-size="22" font-family="Arial">
     ${escapeXml(trunc(album, 45))}
   </text>
 </svg>`;
