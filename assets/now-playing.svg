@@ -1,0 +1,14 @@
+
+<svg width="720" height="170" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="170" rx="20" fill="#0f1115"/>
+  <image href="" x="30" y="30" width="110" height="110" rx="12"/>
+  <text x="170" y="75" fill="#ffffff" font-size="28" font-family="Arial" font-weight="bold">
+    Not Playing
+  </text>
+  <text x="170" y="105" fill="#aaaaaa" font-size="20" font-family="Arial">
+    
+  </text>
+  <text x="170" y="130" fill="#aaaaaa" font-size="20" font-family="Arial">
+    
+  </text>
+</svg>
