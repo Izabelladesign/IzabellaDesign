@@ -12,10 +12,3 @@ ml research, intelligent systems, and space tech.
 * cs @ san josé state university
 
 [portfolio](https://izabelladesign.github.io/) · [linkedin](https://www.linkedin.com/in/izabelladoser) · [email](mailto:izzyd023@gmail.com)
-
----
-
-### 🎧 what i'm listening to rn
-<img src="https://izabella-design-uwzv.vercel.app/api/now-playing" />
-
-<img src="https://raw.githubusercontent.com/IzabellaDesign/IzabellaDesign/output/github-contribution-grid-snake-dark.svg" />
